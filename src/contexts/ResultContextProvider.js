@@ -16,7 +16,7 @@ export const ResultContextProvider = ({ children }) => {
             headers: {
                 'x-user-agent': 'desktop',
                 'x-rapidapi-host': 'google-search3.p.rapidapi.com',
-                'x-rapidapi-key': '7bb767bdf2msh78bfd4ee482f028p1feb66jsnd0f83603404b'
+                'x-rapidapi-key': process.env.REACT_APP_API_KEY,
             }
         })
         const data = await response.json();
